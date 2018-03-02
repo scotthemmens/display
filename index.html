@@ -42,6 +42,7 @@ update(data)
     });
     
 function update(data) {
+    $('#updates').empty();
     $.each(data, function(i, item) {
     var num = i +=1;
     var timeTo = Math.ceil(item.timeToStation / 60);
