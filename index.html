@@ -51,11 +51,21 @@ function update(data) {
 });
 }
 
-$(document).ready(function(){
-    var d = new Date();
+$(function(){
+setInterval(oneSecondFunction, 1000);
+});
+
+function oneSecondFunction() {
+// stuff you want to do every second
+
+ var d = new Date();
     var formatteddatestr = moment(d).format('hh:mm:ss a');
     $('#myformattedTime').html(formatteddatestr);
-});
+}
+
+
+   
+
 
 
         </script>
