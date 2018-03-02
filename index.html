@@ -67,7 +67,7 @@ function oneSecondFunction() {
     $('#myformattedTime').html(formatteddatestr);
 }
 
-function updateDateFunction() {
+function updatesDateFunction() {
 
      $.get("https://api-argon.tfl.gov.uk/Line/central/Arrivals/940GZZLUWSD?direction=inbound", function(data, status){
 update(data)
