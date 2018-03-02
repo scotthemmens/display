@@ -67,10 +67,12 @@ function oneSecondFunction() {
     $('#myformattedTime').html(formatteddatestr);
 }
 
-function updatesDateFunction() {
+function updateDateFunction() {
 
-     $.get("https://api-argon.tfl.gov.uk/Line/central/Arrivals/940GZZLUWSD?direction=inbound", function(data, status){
+             $.get("https://api-argon.tfl.gov.uk/Line/central/Arrivals/940GZZLUWSD?direction=inbound", function(data, status){
 update(data)
+ 
+    });
 }
 
 
