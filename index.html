@@ -55,12 +55,22 @@ $(function(){
 setInterval(oneSecondFunction, 1000);
 });
 
+$(function(){
+setInterval(updatesDataFunction, 60000);
+});
+
 function oneSecondFunction() {
 // stuff you want to do every second
 
  var d = new Date();
     var formatteddatestr = moment(d).format('hh:mm:ss a');
     $('#myformattedTime').html(formatteddatestr);
+}
+
+function updateDateFunction() {
+
+     $.get("https://api-argon.tfl.gov.uk/Line/central/Arrivals/940GZZLUWSD?direction=inbound", function(data, status){
+update(data)
 }
 
 
